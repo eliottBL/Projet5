@@ -1,9 +1,11 @@
 function Header() {
     return (<header>
-        <img>...</img>
-        <nav>
+        <div className="header-container">
+        
+        <nav className="menu">
 
         </nav>
+        </div>
         <h1>Chez vous, partout et ailleurs</h1>
     </header>)
 }
