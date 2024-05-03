@@ -1,12 +1,13 @@
+import logo from '../assets/logo-kasa.png';
+import '../styles/Header.css';
+
 function Header() {
     return (<header>
-        <div className="header-container">
-        
+        <img src={logo} alt='logo Kasa' className="logo" />
         <nav className="menu">
-
+            <a href="">Accueil </a>
+            <a href="">A Propos</a>
         </nav>
-        </div>
-        <h1>Chez vous, partout et ailleurs</h1>
     </header>)
 }
 
