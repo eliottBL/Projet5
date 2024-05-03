@@ -4,6 +4,7 @@ header {
     align-items: center;
     width: 90vw;
     max-width: 1240px;
+    margin-top: 20px;
 }
 
 nav {

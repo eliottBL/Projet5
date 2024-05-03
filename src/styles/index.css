@@ -12,9 +12,9 @@ code {
     monospace;
 }
 
-div {
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 20px;
+  align-items: center;
+  gap: 20px;
 }
