@@ -1,12 +1,13 @@
 import logo from '../assets/logo-kasa.png';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 function Header() {
     return (<header>
         <img src={logo} alt='logo Kasa' className="logo" />
         <nav className="menu">
-            <a href="">Accueil </a>
-            <a href="">A Propos</a>
+            <Link to="/">Accueil</Link>
+            <Link to="/apropos">A Propos</Link>
         </nav>
     </header>)
 }
