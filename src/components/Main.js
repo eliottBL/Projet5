@@ -1,11 +1,11 @@
-import '../../styles/Main.scss';
+import '../styles/Main.scss';
 
-function Main() {
+function Main({ texte }) {
     return (
         <main>
-
+            <p>{texte}</p>
         </main>
     )
 };
 
-export default MainAccueil; 
+export default Main; 

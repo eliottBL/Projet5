@@ -1,12 +1,13 @@
-import '../../../styles/index.scss';
-import Header from '../../Header';
-import MainApropos from '../../main/MainApropos';
-import Footer from '../../Footer';
+import '../styles/index.scss';
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
 
 function Apropos() {
+  const texte = 'apropos'
   return (<div className="container">
     <Header />
-    <Main />
+    <Main texte={texte} />
     <Footer />
   </div>)
 }

@@ -1,12 +1,13 @@
-import '../../../styles/index.scss';
+import '../styles/index.scss';
 import Header from '../components/Header';
-import MainAccueil from '../components/Main';
+import Main from '../components/Main';
 import Footer from '../components/Footer';
 
 function Accueil() {
+  const texte = 'accueil'
   return (<div className="container">
     <Header />
-    <Main />
+    <Main texte={texte} />
     <Footer />
   </div>)
 }
