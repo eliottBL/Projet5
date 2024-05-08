@@ -1,11 +1,15 @@
+import '../styles/Banner.scss'
 
-
-function Banner() {
+function Banner({ image }) {
     return (
         <section>
-            <img src={logo} />
-            <p></p>
+            <p>Chez vous, partout et ailleurs</p>
+            <div>
+                <img src={image}></img>
+            </div>
         </section>
 
     )
 }
+
+export default Banner; 

@@ -13,7 +13,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<Apropos />} />
-        <Route path="/erreur404" element={<Erreur404 />} />
+        <Route path="*" element={<Erreur404 />} />
       </Routes>
     </Router>
   </React.StrictMode>,

@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        max-height: 223px;
+
+        img {
+            object-fit: cover;
+            max-width: 1220px;
+            width: 90vw;
+            filter: brightness(55%);
+            border-radius: 25px;
+        }
+    }
+
+    p {
+        position: absolute;
+        z-index: 1;
+        font-family: 'Monsterrat';
+        /* 
+        ajouter font
+        contours lettre
+        */
+        font-size: 48px;
+        font-weight: 700;
+        color: white;
+    }
+}

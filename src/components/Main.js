@@ -1,9 +1,11 @@
 import '../styles/Main.scss';
+import Banner from '../components/Banner';
 
-function Main({ texte }) {
+function Main({ imageUrl }) {
+    let image = imageUrl
     return (
         <main>
-            <p>{texte}</p>
+            <Banner image={image} />
         </main>
     )
 };
