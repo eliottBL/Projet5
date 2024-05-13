@@ -1,14 +1,15 @@
 import '../styles/index.scss';
 import Header from '../components/Header';
-import Main from '../components/Main';
 import Footer from '../components/Footer';
 import imageUrl from '../assets/image-apropos.png'
+import Banner from '../components/Banner';
 
 function Apropos() {
-  const image = imageUrl;
   return (<div className="container">
     <Header />
-    <Main imageUrl={image} />
+    <main>
+      <Banner imageUrl={imageUrl} />
+    </main>
     <Footer />
   </div>)
 }

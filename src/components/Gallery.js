@@ -1,18 +1,17 @@
 import '../styles/Gallery.scss'
 import listeLogements from './logements.json'
-
-useEffect(() => {
-    fetch(listeLogements)
-        .then((response) => response.json()
-            .then(({ logementsData }) => console.log(logementsData))
-            .catch((error) => console.log(error))
-        )
-}, [])
+import { useState, useEffect } from 'react'
 
 function Gallery() {
+
     return (
-        <section>
+        <section className='gallery'>
             <p>GALLERY</p>
+            {listeLogements.map((logement) => (
+                <div key={logement.id} className='card'>{logement.title}</div>
+            )
+
+            )}
         </section>
 
     )

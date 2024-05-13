@@ -1,14 +1,18 @@
 import '../styles/index.scss';
 import Header from '../components/Header';
-import Main from '../components/Main';
 import Footer from '../components/Footer';
 import imageUrl from '../assets/image-accueil.png'
+import Banner from '../components/Banner';
+import Gallery from '../components/Gallery';
 
 function Accueil() {
   const image = imageUrl;
   return (<div className="container">
     <Header />
-    <Main imageUrl={image} />
+    <main>
+      <Banner imageUrl={imageUrl} />
+      <Gallery />
+    </main>
     <Footer />
   </div>)
 }

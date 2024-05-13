@@ -7,6 +7,19 @@ section {
         display: flex;
         max-height: 223px;
 
+        p {
+            position: absolute;
+            z-index: 1;
+            font-family: 'Monsterrat';
+            /* 
+            ajouter font
+            contours lettre
+            */
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+        }
+
         img {
             object-fit: cover;
             max-width: 1220px;
@@ -20,6 +33,7 @@ section {
         position: absolute;
         z-index: 1;
         font-family: 'Monsterrat';
+        width: 80%;
         /* 
         ajouter font
         contours lettre
