@@ -2,7 +2,7 @@ import '../styles/Banner.scss'
 
 function Banner({ imageUrl }) {
     return (
-        <section>
+        <section className='banner'>
             <p>Chez vous, partout et ailleurs</p>
             <div>
                 <img src={imageUrl}></img>

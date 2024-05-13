@@ -6,12 +6,12 @@ function Gallery() {
 
     return (
         <section className='gallery'>
-            <p>GALLERY</p>
             {listeLogements.map((logement) => (
-                <div key={logement.id} className='card'>{logement.title}</div>
-            )
+                <div key={logement.id} className='card'>
+                    <h2>{logement.title}</h2>
+                </div>
 
-            )}
+            ))}
         </section>
 
     )
