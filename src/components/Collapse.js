@@ -16,8 +16,7 @@ function Collapse({ title, contenue }) {
                 <h3>{title}</h3>
                 <img className={style} onClick={() => { setIsOpen(false); Rotate(); }} src={svg}></img>
             </div>
-            <div>{contenue}</div>
-
+            <p className='collapse-texte'>{contenue}</p>
         </div>
     ) : (<div className='collapse'>
         <div className='collapse-head'>

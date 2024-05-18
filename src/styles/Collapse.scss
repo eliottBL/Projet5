@@ -1,17 +1,31 @@
 div {
     .collapse-head {
-        background-color: red;
+        background-color: #ff6060;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-radius: 15px;
+        padding: 10px 20px 20px 10px;
+        border-radius: 5px;
+
+        h3 {
+            color: white;
+            font-size: 24px;
+        }
 
         img {
             width: 24px;
             height: 13.71px;
         }
+    }
+
+    .collapse-texte {
+        font-size: 18px;
+        padding-left: 15px;
+        margin: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-justify: auto;
+        background-color: #f6f6f6;
     }
 
     .ouvert {

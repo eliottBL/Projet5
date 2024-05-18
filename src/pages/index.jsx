@@ -7,14 +7,15 @@ import Gallery from '../components/Gallery';
 
 function Accueil() {
   const image = imageUrl;
-  return (<div className="container">
-    <Header />
-    <main>
-      <Banner imageUrl={imageUrl} />
-      <Gallery />
-    </main>
-    <Footer />
-  </div>)
+  return (
+    <div className="container">
+      <Header />
+      <main>
+        <Banner imageUrl={imageUrl} />
+        <Gallery />
+      </main>
+      <Footer />
+    </div>)
 }
 
 export default Accueil;
