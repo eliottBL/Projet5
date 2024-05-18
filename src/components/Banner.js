@@ -1,9 +1,9 @@
 import '../styles/Banner.scss'
 
-function Banner({ imageUrl }) {
+function Banner({ texte, imageUrl }) {
     return (
         <section className='banner'>
-            <p>Chez vous, partout et ailleurs</p>
+            <p>{texte}</p>
             <div>
                 <img src={imageUrl}></img>
             </div>

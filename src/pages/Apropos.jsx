@@ -6,10 +6,11 @@ import Banner from '../components/Banner';
 import Collapses from '../components/Collapses';
 
 function Apropos() {
+  const texte = ''
   return (<div className="container">
     <Header />
     <main>
-      <Banner imageUrl={imageUrl} />
+      <Banner texte={texte} imageUrl={imageUrl} />
       <section>
         <Collapses />
       </section>

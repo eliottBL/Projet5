@@ -7,11 +7,12 @@ import Gallery from '../components/Gallery';
 
 function Accueil() {
   const image = imageUrl;
+  const texte = 'Chez vous, partout et ailleurs'
   return (
     <div className="container">
       <Header />
       <main>
-        <Banner imageUrl={imageUrl} />
+        <Banner texte={texte} imageUrl={imageUrl} />
         <Gallery />
       </main>
       <Footer />
