@@ -10,7 +10,9 @@ function Apropos() {
     <Header />
     <main>
       <Banner imageUrl={imageUrl} />
-      <Collapses />
+      <section>
+        <Collapses />
+      </section>
     </main>
     <Footer />
   </div>)

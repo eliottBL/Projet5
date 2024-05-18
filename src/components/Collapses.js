@@ -5,11 +5,14 @@ import Collapse from './Collapse';
 
 
 function Collapses() {
-    return (
-        <section>
-            <Collapse />
-        </section>
-    )
+    const titleArray = ['bbb', 'hhh', 'ccc']
+    const listeArray = ['BBB', 'HHH', 'CCC']
+
+    for (let i = 0; i < 3; i++) {
+        return (
+            <Collapse title={titleArray[i]} liste={listeArray[i]} />
+        )
+    }
 }
 
 export default Collapses; 

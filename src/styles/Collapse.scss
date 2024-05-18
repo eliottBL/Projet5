@@ -1,14 +1,26 @@
-.collapse {
-    background-color: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px;
+section {
+    .collapse-head {
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
 
-    img {
-        width: 24px;
-        height: 13.71px;
+        img {
+            width: 24px;
+            height: 13.71px;
+        }
+    }
+
+    .ouvert {
+        transition: transform 0.5s;
+        transform: rotate(-180deg);
+    }
+
+    .fermé {
+        transition: transform 0.5s;
+        transform: rotate(0deg);
     }
 }
