@@ -1,5 +1,4 @@
-import '../styles/Gallery.scss'
-import listeLogements from '../data/protoLogements.json'
+import '../styles/Collapse.scss'
 import { useState, useEffect } from 'react'
 import svg from '../assets/fleche.png'
 
@@ -14,12 +13,12 @@ function Collapse() {
     }
 
     return isOpen ? (
-        <section>
+        <section className='collapse'>
             <h3>Collapse</h3>
             <img onClick={() => { setIsOpen(false); Rotate(); }} src={svg}></img>
         </section>
 
-    ) : (<section>
+    ) : (<section className='collapse'>
         <h3>Collapse</h3>
         <img onClick={() => { setIsOpen(true); Rotate(); }} src={svg}></img>
     </section>)
