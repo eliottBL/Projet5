@@ -13,7 +13,7 @@
         width: 27vw;
         height: 27vw;
         min-width: 178px;
-        background-color: aliceblue;
+        background: linear-gradient(#ff6060, #dc6565ef);
         border-radius: 10px;
         display: flex;
         align-items: end;
@@ -22,6 +22,7 @@
         h2 {
             font-size: 18px;
             margin-left: 2%;
+            color: white;
         }
     }
 }
