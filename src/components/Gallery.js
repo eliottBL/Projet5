@@ -21,7 +21,7 @@ function Gallery() {
     return (
         <section className='gallery'>
             {listeLogements.map((logement) => (
-                <Link to={'/logement'} key={logement.id}>
+                <Link to={'/logement/' + logement.id} key={logement.id}>
                     <div key={logement.id} className='card'>
                         <img src={logement.cover}></img>
                         <h2>{logement.title}</h2>
@@ -30,7 +30,6 @@ function Gallery() {
 
             ))}
         </section>
-
     )
 }
 

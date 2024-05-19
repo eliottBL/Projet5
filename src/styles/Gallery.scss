@@ -17,19 +17,20 @@
         margin: 10px;
         align-content: end;
 
+        h2 {
+            font-size: 18px;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            width: 27vw;
+            color: white;
+            position: absolute;
+            align-self: end;
+        }
+
         img {
             object-fit: cover;
             width: 100%;
             border-radius: 10px;
-        }
-
-        h2 {
-            font-size: 18px;
-            margin-left: 2%;
-            margin-right: 2%;
-            color: white;
-            position: absolute;
-            align-self: end;
         }
     }
 }
@@ -42,6 +43,16 @@
         .card {
             width: 90vw;
             height: 90vw;
+
+            h2 {
+                font-size: 18px;
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 27vw;
+                color: white;
+                position: absolute;
+                align-self: end;
+            }
         }
     }
 }
