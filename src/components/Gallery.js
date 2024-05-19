@@ -27,7 +27,6 @@ function Gallery() {
                         <h2>{logement.title}</h2>
                     </div>
                 </Link>
-
             ))}
         </section>
     )

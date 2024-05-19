@@ -19,4 +19,32 @@ code {
   align-items: center;
   gap: 20px;
   height: 100vh;
+
+  .main-erreur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .erreur-title {
+      color: #ff6060;
+      margin: 0px;
+      font-size: 288px;
+    }
+
+    .retour {
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    .main-erreur {
+      .erreur-title {
+        font-size: 150px;
+      }
+    }
+  }
 }
