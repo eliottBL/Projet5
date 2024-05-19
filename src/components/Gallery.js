@@ -1,6 +1,7 @@
 import '../styles/Gallery.scss'
 import listeLogements from '../data/protoLogements.json'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 function Gallery() {
     /*
@@ -16,12 +17,15 @@ function Gallery() {
                 .catch((error) => console.log(error))
         }, [])
         */
+
     return (
         <section className='gallery'>
             {listeLogements.map((logement) => (
-                <div key={logement.id} className='card'>
-                    <h2>{logement.title}</h2>
-                </div>
+                <Link to='/logement' state={logement.id}>
+                    <div key={logement.id} className='card'>
+                        <h2>{logement.title}</h2>
+                    </div>
+                </Link>
 
             ))}
         </section>
