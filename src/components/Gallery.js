@@ -21,8 +21,9 @@ function Gallery() {
     return (
         <section className='gallery'>
             {listeLogements.map((logement) => (
-                <Link to='/logement' state={logement.id}>
+                <Link to={'/logement'} key={logement.id}>
                     <div key={logement.id} className='card'>
+                        <img src={logement.cover}></img>
                         <h2>{logement.title}</h2>
                     </div>
                 </Link>

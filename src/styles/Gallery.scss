@@ -13,16 +13,23 @@
         width: 27vw;
         height: 27vw;
         min-width: 178px;
-        background: linear-gradient(#ff6060, #dc6565ef);
-        border-radius: 10px;
         display: flex;
-        align-items: end;
         margin: 10px;
+        align-content: end;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 10px;
+        }
 
         h2 {
             font-size: 18px;
             margin-left: 2%;
+            margin-right: 2%;
             color: white;
+            position: absolute;
+            align-self: end;
         }
     }
 }
