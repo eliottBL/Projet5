@@ -4,19 +4,14 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
 function Gallery() {
-    /*
-        useEffect(() => {
-            fetch("../../public/logements.json", {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            })
-                .then((response) => response.json())
-                .then((response) => console.log(response))
-                .catch((error) => console.log(error))
-        }, [])
-        */
+
+    useEffect(() => {
+        fetch("logements.json")
+            .then((response) => response.json())
+            .then((response) => console.log(response))
+            .catch((error) => console.log(error))
+    }, [])
+
 
     return (
         <section className='gallery'>

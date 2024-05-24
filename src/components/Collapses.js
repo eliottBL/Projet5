@@ -1,6 +1,4 @@
 import '../styles/Collapses.scss'
-import listeLogements from '../data/protoLogements.json'
-import { useState, useEffect } from 'react'
 import Collapse from './Collapse';
 
 
