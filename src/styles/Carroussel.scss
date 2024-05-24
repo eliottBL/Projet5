@@ -1,0 +1,24 @@
+.carroussel {
+    div {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        color: blanchedalmond;
+        border: 2px black solid;
+        width: 100%;
+        align-items: center;
+
+        .prev {
+            rotate: -90deg;
+        }
+
+        .next {
+            color: black;
+            rotate: +90deg;
+        }
+    }
+
+    .carroussel-gallery {
+        width: 100%;
+    }
+}
