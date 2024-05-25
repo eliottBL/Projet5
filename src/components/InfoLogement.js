@@ -19,6 +19,7 @@ function InfoLogement() {
 
                 </div>
                 <div className="rate">
+                    <img className="grey" src={svg}></img>
 
                 </div>
             </div>
