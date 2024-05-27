@@ -1,0 +1,13 @@
+.rate {
+    display: flex;
+    gap: 5px;
+
+    .red {
+        fill: #ff0000;
+        width: 15px;
+    }
+
+    .grey {
+        color: grey;
+    }
+}

@@ -1,4 +1,6 @@
-function InfoLogement() {
+import Rating from "./Rating";
+
+function InfoLogement({ rate }) {
     return (
         <section>
             <div>
@@ -9,19 +11,18 @@ function InfoLogement() {
                 <div>
                     <div>
                         <p className="nom"></p>
-                        <p className="prenom"></p>
                     </div>
                     <img></img>
                 </div>
             </div>
             <div>
-                <div className="tag">
+                <div className="tags">
+                    { }
 
                 </div>
-                <div className="rate">
-                    <img className="grey" src={svg}></img>
 
-                </div>
+                <Rating rating={rate} />
+
             </div>
         </section>
     )
