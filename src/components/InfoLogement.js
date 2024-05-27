@@ -1,23 +1,24 @@
 import Rating from "./Rating";
 
-function InfoLogement({ rate }) {
+function InfoLogement({ title, location, hostPic, hostName, rate }) {
+
     return (
         <section>
             <div>
                 <div>
-                    <h2 className="title"></h2>
-                    <h3 className="location"></h3>
+                    <h2 className="title">{title}</h2>
+                    <h3 className="location">{location}</h3>
                 </div>
-                <div>
+                <div className="host">
                     <div>
-                        <p className="nom"></p>
+                        <p className="host-name">{hostName}</p>
                     </div>
-                    <img></img>
+                    <img className="host-pic" src={hostPic}></img>
                 </div>
             </div>
             <div>
                 <div className="tags">
-                    { }
+
 
                 </div>
 

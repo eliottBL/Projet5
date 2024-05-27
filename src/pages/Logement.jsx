@@ -10,6 +10,12 @@ function Logement() {
   const { id } = useParams()
   const logement = listeLogements.filter(element => element.id == id)
   const pictures = logement[0].pictures
+  const tags = logement[0].tags
+  const hostName = logement[0].host.name
+  const hostPicture = logement[0].host.picture
+  const rate = logement[0].rating
+  const location = logement[0].location
+  const title = logement[0].title
 
   return (
     <div>
@@ -17,7 +23,7 @@ function Logement() {
       <main>
         <p>{id}</p>
         <Carroussel pictures={pictures} />
-        <InfoLogement tags={logement[0].tags} name={logement[0].host} title={logement[0].title} location={logement[0].location} rate={logement[0].rating} />
+        <InfoLogement location={location} title={title} tags={tags} hostName={hostName} hostPic={hostPicture} rate={rate} />
       </main>
       <Footer />
     </div>
