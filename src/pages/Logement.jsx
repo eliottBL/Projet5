@@ -5,21 +5,15 @@ import '../styles/index.scss';
 import { redirect, useParams } from 'react-router';
 import listeLogements from '../data/protoLogements.json'
 import InfoLogement from '../components/InfoLogement';
+import Erreur404 from './Erreur';
 
 function Logement() {
   const { id } = useParams()
   const logement = listeLogements.find(element => element.id == id)
-  /*if (logement == undefined) {
-    redirect()
-  }*/
-  const pictures = logement.pictures
-  const tags = logement.tags
-  const hostName = logement.host.name
-  const hostPicture = logement.host.picture
-  const rate = logement.rating
-  const location = logement.location
-  const title = logement.title
 
+  if (!logement) {
+    return <Erreur404 />
+  }
   return (
     <div>
       <Header />
