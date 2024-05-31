@@ -4,17 +4,6 @@ import Collapse from './Collapse'
 
 function InfoLogement({ description, equipements, tags, title, location, hostPic, hostName, rate }) {
     const hostNameSplit = hostName.split(' ')
-    const equip = () => {
-        return (
-            equipements.map((equipe) => (
-                <div key={equipe}>{equipe}</div>
-            ))
-        )
-    }
-
-    if (Array.isArray(equipements)) {
-        console.log(equipements)
-    }
 
     return (
         <section>

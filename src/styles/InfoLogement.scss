@@ -61,3 +61,13 @@
         }
     }
 }
+
+.logement-container-collapse {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    .collapse {
+        width: 45%;
+    }
+}

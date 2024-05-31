@@ -1,4 +1,3 @@
-import svg from '../assets/fleche.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import '../styles/Carroussel.scss'
