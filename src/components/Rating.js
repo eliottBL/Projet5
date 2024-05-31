@@ -1,5 +1,7 @@
-import svg from '../assets/star.svg'
+
 import '../styles/Rating.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function Rating({ rating }) {
     let note = [1, 2, 3, 4, 5]
@@ -8,7 +10,7 @@ function Rating({ rating }) {
         <div className='rate'>
             {note.map((index) => (
                 <div key={index}>
-                    <img className={`${index < rating ? 'red' : 'grey'}`} src={svg}></img>
+                    <FontAwesomeIcon className={`${index < rating ? 'red' : 'grey'}`} icon={faStar} />
                 </div>
             ))}
         </div>
