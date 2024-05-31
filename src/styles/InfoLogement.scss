@@ -1,0 +1,64 @@
+.logement-container-haut {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+    max-width: 1240px;
+    width: 90vw;
+
+    .head {
+        font-family: 'Montserrat';
+
+        .title {
+            font-size: 36px;
+            margin: 0;
+            color: #ff6060;
+            font-weight: 500;
+        }
+
+        .location {
+            font-size: 18px;
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+
+    .host {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .host-name {
+            text-align: end;
+            margin: 0;
+        }
+
+        .host-pic {
+            border-radius: 50px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+
+.logement-container-bas {
+    display: flex;
+    justify-content: space-between;
+
+    .tags {
+        display: flex;
+        gap: 10px;
+
+        div {
+            background-color: #ff6060;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            text-align: center;
+            color: white;
+        }
+    }
+}

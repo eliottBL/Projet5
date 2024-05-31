@@ -2,7 +2,7 @@ import Carroussel from '../components/Carroussel';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import '../styles/index.scss';
-import { redirect, useParams } from 'react-router';
+import { useParams } from 'react-router';
 import listeLogements from '../data/protoLogements.json'
 import InfoLogement from '../components/InfoLogement';
 import Erreur404 from './Erreur';
@@ -15,10 +15,9 @@ function Logement() {
     return <Erreur404 />
   }
   return (
-    <div>
+    <div className="container">
       <Header />
       <main>
-        <p>{id}</p>
         <Carroussel pictures={logement.pictures} />
         <InfoLogement location={logement.location} title={logement.title} tags={logement.tags} hostName={logement.host.name} hostPic={logement.host.picture} rate={logement.rating} />
       </main>

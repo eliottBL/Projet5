@@ -1,4 +1,6 @@
 import svg from '../assets/fleche.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import '../styles/Carroussel.scss'
 import { useState } from 'react'
 
@@ -24,8 +26,8 @@ function Carroussel({ pictures }) {
     return (
         <div className="carroussel">
             <div>
-                <img className="prev" onClick={prev} src={svg}></img>
-                <img className="next" onClick={next} src={svg}></img>
+                <FontAwesomeIcon className="prev" onClick={prev} icon={faAngleDown} />
+                <FontAwesomeIcon className="next" onClick={next} icon={faAngleDown} />
             </div>
             <img className="carroussel-gallery" src={picturesArray[index]}></img>
         </div>)

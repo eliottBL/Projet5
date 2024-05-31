@@ -1,24 +1,36 @@
 .carroussel {
+    display: flex;
+    max-width: 1200px;
+    max-height: 415px;
+    width: 90vw;
+
     div {
         position: absolute;
         display: flex;
         justify-content: space-between;
-        color: blanchedalmond;
-        border: 2px black solid;
-        width: 100%;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        object-fit: cover;
+        width: 90vw;
+        max-height: 415px;
+        height: 100%;
         align-items: center;
 
         .prev {
-            rotate: -90deg;
+            rotate: 90deg;
+            font-size: 60px;
         }
 
         .next {
-            color: black;
-            rotate: +90deg;
+            rotate: -90deg;
+            font-size: 60px;
         }
     }
 
     .carroussel-gallery {
         width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
     }
 }

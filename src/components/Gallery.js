@@ -1,6 +1,6 @@
 import '../styles/Gallery.scss'
 import listeLogements from '../data/protoLogements.json'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
 function Gallery() {
@@ -8,7 +8,6 @@ function Gallery() {
     useEffect(() => {
         fetch("logements.json")
             .then((response) => response.json())
-            .then((response) => console.log(response))
             .catch((error) => console.log(error))
     }, [])
 
