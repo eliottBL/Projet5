@@ -1,8 +1,13 @@
 import '../styles/Collapse.scss'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import svg from '../assets/fleche.png'
 
 function Collapse({ title, contenue }) {
+    let contenueArray = ''
+    if (Array.isArray(contenue)) {
+        contenueArray = contenue
+    } else { contenueArray = [contenue] }
+
     const [isOpen, setIsOpen] = useState(false)
     const [style, setStyle] = useState("fermé");
     const Rotate = () => {
@@ -16,7 +21,11 @@ function Collapse({ title, contenue }) {
                 <h3>{title}</h3>
                 <img className={style} onClick={() => { setIsOpen(false); Rotate(); }} src={svg}></img>
             </div>
-            <p className='collapse-texte'>{contenue}</p>
+            <div className='collapse-texte'>
+                {contenueArray.map((element, index) => (
+                    <p key={index}>{element}</p>
+                ))}
+            </div>
         </div>
     ) : (<div className='collapse'>
         <div className='collapse-head'>

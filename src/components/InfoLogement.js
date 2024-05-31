@@ -1,8 +1,20 @@
 import Rating from "./Rating";
 import "../styles/InfoLogement.scss"
+import Collapse from './Collapse'
 
-function InfoLogement({ tags, title, location, hostPic, hostName, rate }) {
+function InfoLogement({ description, equipements, tags, title, location, hostPic, hostName, rate }) {
     const hostNameSplit = hostName.split(' ')
+    const equip = () => {
+        return (
+            equipements.map((equipe) => (
+                <div key={equipe}>{equipe}</div>
+            ))
+        )
+    }
+
+    if (Array.isArray(equipements)) {
+        console.log(equipements)
+    }
 
     return (
         <section>
@@ -26,11 +38,12 @@ function InfoLogement({ tags, title, location, hostPic, hostName, rate }) {
                             {tag}
                         </div>
                     ))}
-
                 </div>
-
                 <Rating rating={rate} />
-
+            </div>
+            <div className="logement-container-collapse">
+                <Collapse className='collaps' title={'Description'} contenue={description} />
+                <Collapse className='collaps' title={'Équipements'} contenue={equipements} />
             </div>
         </section>
     )

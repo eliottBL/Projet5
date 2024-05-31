@@ -19,7 +19,7 @@ function Logement() {
       <Header />
       <main>
         <Carroussel pictures={logement.pictures} />
-        <InfoLogement location={logement.location} title={logement.title} tags={logement.tags} hostName={logement.host.name} hostPic={logement.host.picture} rate={logement.rating} />
+        <InfoLogement equipements={logement.equipments} description={logement.description} location={logement.location} title={logement.title} tags={logement.tags} hostName={logement.host.name} hostPic={logement.host.picture} rate={logement.rating} />
       </main>
       <Footer />
     </div>
