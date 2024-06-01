@@ -5,9 +5,20 @@ header {
     width: 90vw;
     max-width: 1240px;
     margin-top: 20px;
-}
 
-nav {
-    display: flex;
-    gap: 30px;
+    .menu {
+        display: flex;
+        gap: 30px;
+        text-decoration: none;
+
+        .none {
+            color: black;
+            text-decoration: none;
+        }
+
+        .underline {
+            color: black;
+            text-decoration: underline;
+        }
+    }
 }
