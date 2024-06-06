@@ -7,28 +7,30 @@ function InfoLogement({ description, equipements, tags, title, location, hostPic
 
     return (
         <section>
-            <div className="logement-container-haut">
-                <div className="head">
-                    <h2 className="title">{title}</h2>
-                    <h3 className="location">{location}</h3>
-                </div>
-                <div className="host">
-                    <div>
-                        <p className="host-name">{hostNameSplit[0]}</p>
-                        <p className="host-name">{hostNameSplit[1]}</p>
+            <div className="info-logement">
+                <div className="logement-container-left">
+                    <div className="head">
+                        <h2 className="title">{title}</h2>
+                        <h3 className="location">{location}</h3>
                     </div>
-                    <img className="host-pic" src={hostPic}></img>
+                    <div className="tags">
+                        {tags.map((tag) => (
+                            <div key={tag}>
+                                {tag}
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="logement-container-bas">
-                <div className="tags">
-                    {tags.map((tag) => (
-                        <div key={tag}>
-                            {tag}
+                <div className="logement-container-right">
+                    <div className="host">
+                        <div>
+                            <p className="host-name">{hostNameSplit[0]}</p>
+                            <p className="host-name">{hostNameSplit[1]}</p>
                         </div>
-                    ))}
+                        <img className="host-pic" src={hostPic}></img>
+                    </div>
+                    <Rating rating={rate} />
                 </div>
-                <Rating rating={rate} />
             </div>
             <div className="logement-container-collapse">
                 <Collapse className='collaps' title={'Description'} contenue={description} />

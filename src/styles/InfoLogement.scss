@@ -1,63 +1,74 @@
-.logement-container-haut {
+.info-logement {
     margin-top: 10px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     max-width: 1240px;
     width: 90vw;
 
-    .head {
-        font-family: 'Montserrat';
+    .logement-container-left {
+        display: flex;
+        gap: 22px;
+        flex-direction: column;
 
-        .title {
-            font-size: 36px;
-            margin: 0;
-            color: #ff6060;
-            font-weight: 500;
+
+        .head {
+            font-family: 'Montserrat';
+
+            .title {
+                font-size: 36px;
+                margin: 0;
+                color: #ff6060;
+                font-weight: 500;
+            }
+
+            .location {
+                font-size: 18px;
+                margin: 0;
+                font-weight: 500;
+            }
         }
 
-        .location {
-            font-size: 18px;
-            margin: 0;
-            font-weight: 500;
+        .tags {
+            display: flex;
+            gap: 10px;
+
+            div {
+                background-color: #ff6060;
+                border-radius: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                text-align: center;
+                color: white;
+            }
         }
+
+
     }
 
-    .host {
+    .logement-container-right {
         display: flex;
-        gap: 10px;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 5px;
 
-        .host-name {
-            text-align: end;
-            margin: 0;
-        }
 
-        .host-pic {
-            border-radius: 50px;
-            width: 64px;
-            height: 64px;
-        }
-    }
-}
+        .host {
+            display: flex;
+            gap: 10px;
+            align-items: center;
 
-.logement-container-bas {
-    display: flex;
-    justify-content: space-between;
+            .host-name {
+                text-align: end;
+                margin: 0;
+            }
 
-    .tags {
-        display: flex;
-        gap: 10px;
-
-        div {
-            background-color: #ff6060;
-            border-radius: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 5px;
-            padding-top: 5px;
-            text-align: center;
-            color: white;
+            .host-pic {
+                border-radius: 50px;
+                width: 64px;
+                height: 64px;
+            }
         }
     }
 }
@@ -69,5 +80,31 @@
 
     .collapse {
         width: 45%;
+    }
+}
+
+
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .info-logement {
+        flex-direction: column;
+
+        .logement-container-right {
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+    }
+
+    .logement-container-collapse {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+
+        .collapse {
+            width: 100%;
+            max-width: 90vw;
+        }
     }
 }

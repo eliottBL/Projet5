@@ -7,10 +7,10 @@ function Header() {
     let AppStyle = 'none'
     const page = useLocation()
 
-    if (page.pathname == '/') {
+    if (page.pathname === '/') {
         AccStyle = 'underline'
         AppStyle = 'none'
-    } else if (page.pathname == '/apropos') {
+    } else if (page.pathname === '/apropos') {
         AccStyle = 'none'
         AppStyle = 'underline'
     }
