@@ -8,31 +8,27 @@ function Collapse({ title, contenue }) {
         contenueArray = contenue
     } else { contenueArray = [contenue] }
 
-    const [isOpen, setIsOpen] = useState(false)
-    const [style, setStyle] = useState("fermé");
-    const Rotate = () => {
-        if (style == "fermé") setStyle("ouvert");
-        else if (style == "ouvert") setStyle("fermé");
+    const [style, setStyle] = useState("close");
+    const OpenClose = () => {
+        if (style == "close") setStyle("open");
+        else if (style == "open") setStyle("close");
     }
 
-    return isOpen ? (
+    return (
         <div className='collapse'>
             <div className='collapse-head'>
                 <h3>{title}</h3>
-                <img className={style} onClick={() => { setIsOpen(false); Rotate(); }} src={svg}></img>
+                <img className={style} onClick={OpenClose} src={svg}></img>
             </div>
             <div className='collapse-texte'>
-                {contenueArray.map((element, index) => (
-                    <p key={index}>{element}</p>
-                ))}
+                <div className={style}>
+                    {contenueArray.map((element, index) => (
+                        <p key={index}>{element}</p>
+                    ))}
+                </div>
             </div>
         </div>
-    ) : (<div className='collapse'>
-        <div className='collapse-head'>
-            <h3>{title}</h3>
-            <img className={style} onClick={() => { setIsOpen(true); Rotate(); }} src={svg}></img>
-        </div>
-    </div>)
+    )
 }
 
 export default Collapse; 

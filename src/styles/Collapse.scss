@@ -17,7 +17,19 @@ div {
             width: 24px;
             height: 13.71px;
         }
+
+        .open {
+            transition: transform 0.5s;
+            transform: rotate(-180deg);
+        }
+
+        .close {
+            transition: transform 0.5s;
+            transform: rotate(0deg);
+        }
+
     }
+
 
     .collapse-texte {
         font-size: 18px;
@@ -27,15 +39,10 @@ div {
         padding-bottom: 5px;
         text-justify: auto;
         background-color: #f6f6f6;
-    }
+        display: flex;
 
-    .ouvert {
-        transition: transform 0.5s;
-        transform: rotate(-180deg);
-    }
-
-    .fermé {
-        transition: transform 0.5s;
-        transform: rotate(0deg);
+        .close {
+            display: none;
+        }
     }
 }
