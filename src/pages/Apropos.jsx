@@ -7,16 +7,14 @@ import Collapses from '../components/Collapses';
 
 function Apropos() {
   const texte = ''
-  return (<div className="container">
-    <Header />
+  return (
     <main>
       <Banner texte={texte} imageUrl={imageUrl} />
       <section>
         <Collapses />
       </section>
     </main>
-    <Footer />
-  </div>)
+  )
 }
 
 export default Apropos;

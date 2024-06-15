@@ -15,14 +15,10 @@ function Logement() {
     return <Erreur404 />
   }
   return (
-    <div className="container">
-      <Header />
-      <main>
-        <Carroussel pictures={logement.pictures} />
-        <InfoLogement equipements={logement.equipments} description={logement.description} location={logement.location} title={logement.title} tags={logement.tags} hostName={logement.host.name} hostPic={logement.host.picture} rate={logement.rating} />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <Carroussel pictures={logement.pictures} />
+      <InfoLogement equipements={logement.equipments} description={logement.description} location={logement.location} title={logement.title} tags={logement.tags} hostName={logement.host.name} hostPic={logement.host.picture} rate={logement.rating} />
+    </main>
   )
 }
 

@@ -9,14 +9,11 @@ function Accueil() {
   const image = imageUrl;
   const texte = 'Chez vous, partout et ailleurs'
   return (
-    <div className="container">
-      <Header />
-      <main>
-        <Banner texte={texte} imageUrl={imageUrl} />
-        <Gallery />
-      </main>
-      <Footer />
-    </div>)
+    <main>
+      <Banner texte={texte} imageUrl={imageUrl} />
+      <Gallery />
+    </main>
+  )
 }
 
 export default Accueil;
