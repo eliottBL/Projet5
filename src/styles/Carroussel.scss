@@ -9,7 +9,6 @@
         display: flex;
         justify-content: space-between;
         color: white;
-        text-shadow: 2px 2px 2px black;
         object-fit: cover;
         width: 90vw;
         max-height: 415px;
@@ -25,6 +24,18 @@
             rotate: -90deg;
             font-size: 60px;
         }
+
+    }
+
+    .index {
+        width: 90vw;
+        position: absolute;
+        justify-content: center;
+        align-items: end;
+
+        span {
+            margin-bottom: 10px;
+        }
     }
 
     .carroussel-gallery {
@@ -32,5 +43,14 @@
         height: 415px;
         object-fit: cover;
         border-radius: 25px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .carroussel {
+        .index {
+            display: none;
+        }
     }
 }

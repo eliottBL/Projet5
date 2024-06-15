@@ -28,6 +28,9 @@ function Carroussel({ pictures }) {
                 <FontAwesomeIcon className="prev" onClick={prev} icon={faAngleDown} />
                 <FontAwesomeIcon className="next" onClick={next} icon={faAngleDown} />
             </div>
+            <div className='index'>
+                <span>{index + 1}/{picturesArray.length}</span>
+            </div>
             <img className="carroussel-gallery" src={picturesArray[index]}></img>
         </div>)
 }

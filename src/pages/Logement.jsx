@@ -1,6 +1,4 @@
 import Carroussel from '../components/Carroussel';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import '../styles/index.scss';
 import { useParams } from 'react-router';
 import listeLogements from '../data/protoLogements.json'
