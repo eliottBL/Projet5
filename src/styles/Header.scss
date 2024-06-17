@@ -6,6 +6,10 @@ header {
     max-width: 1240px;
     margin-top: 20px;
 
+    h1 {
+        display: none;
+    }
+
     .menu {
         display: flex;
         gap: 30px;

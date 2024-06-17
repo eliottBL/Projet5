@@ -20,6 +20,13 @@ code {
   gap: 20px;
   height: 100vh;
 
+  .main-apropos {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    gap: 20px;
+  }
+
   .main-erreur {
     display: flex;
     flex-direction: column;

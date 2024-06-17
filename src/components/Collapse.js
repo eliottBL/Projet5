@@ -10,15 +10,15 @@ function Collapse({ title, contenue }) {
 
     const [style, setStyle] = useState("close");
     const OpenClose = () => {
-        if (style == "close") setStyle("open");
-        else if (style == "open") setStyle("close");
+        if (style === "close") setStyle("open");
+        else if (style === "open") setStyle("close");
     }
 
     return (
         <div className='collapse'>
             <div className='collapse-head'>
-                <h3>{title}</h3>
-                <img className={style} onClick={OpenClose} src={svg}></img>
+                <h4>{title}</h4>
+                <img alt='' className={style} onClick={OpenClose} src={svg}></img>
             </div>
             <div className='collapse-texte'>
                 <div className={style}>

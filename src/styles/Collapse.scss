@@ -1,4 +1,8 @@
-div {
+.collapse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
     .collapse-head {
         background-color: #ff6060;
         display: flex;
@@ -7,10 +11,12 @@ div {
         padding: 0px 20px 0px 10px;
         border-radius: 5px;
 
-        h3 {
+        h4 {
             color: white;
             font-size: 18px;
             font-weight: 500;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         img {
@@ -30,7 +36,6 @@ div {
 
     }
 
-
     .collapse-texte {
         font-size: 18px;
         padding-left: 15px;
@@ -40,6 +45,8 @@ div {
         text-justify: auto;
         background-color: #f6f6f6;
         display: flex;
+        max-width: 1220px;
+        width: 100%;
 
         .close {
             display: none;

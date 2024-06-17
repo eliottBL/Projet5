@@ -4,7 +4,6 @@ import Banner from '../components/Banner';
 import Gallery from '../components/Gallery';
 
 function Accueil() {
-  const image = imageUrl;
   const texte = 'Chez vous, partout et ailleurs'
   return (
     <main>

@@ -31,7 +31,7 @@ function Carroussel({ pictures }) {
             <div className='index'>
                 <span>{index + 1}/{picturesArray.length}</span>
             </div>
-            <img className="carroussel-gallery" src={picturesArray[index]}></img>
+            <img alt='carroussel' className="carroussel-gallery" src={picturesArray[index]}></img>
         </div>)
 }
 

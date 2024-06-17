@@ -7,7 +7,7 @@ import Erreur404 from './Erreur';
 
 function Logement() {
   const { id } = useParams()
-  const logement = listeLogements.find(element => element.id == id)
+  const logement = listeLogements.find(element => element.id === id)
 
   if (!logement) {
     return <Erreur404 />

@@ -18,6 +18,7 @@ function Header() {
 
 
     return (<header>
+        <h1 className='web-title'>KASA - site de location immobilière</h1>
         <img src={logo} alt='logo Kasa' className="logo" />
         <nav className="menu">
             <Link className={AccStyle} to="/">Accueil</Link>

@@ -1,15 +1,19 @@
 import '../styles/index.scss';
 import imageUrl from '../assets/image-apropos.png'
 import Banner from '../components/Banner';
-import Collapses from '../components/Collapses';
+
+import dataApropos from '../data/protoApropos.json'
+import Collapse from '../components/Collapse';
 
 function Apropos() {
   const texte = ''
   return (
-    <main>
+    <main className='main-apropos'>
       <Banner texte={texte} imageUrl={imageUrl} />
-      <section>
-        <Collapses />
+      <section className='apropos-collapses'>
+        {dataApropos.map((data) => (
+          <Collapse title={data.titre} contenue={data.contenue} />
+        ))}
       </section>
     </main>
   )
