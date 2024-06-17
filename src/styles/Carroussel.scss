@@ -4,6 +4,10 @@
     max-height: 415px;
     width: 90vw;
 
+    .cache {
+        display: none;
+    }
+
     div {
         position: absolute;
         display: flex;

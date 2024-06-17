@@ -20,11 +20,13 @@ function Carroussel({ pictures }) {
         }
         else setIndex(index + 1)
     }
+    const [style, setStyle] = useState('visible')
+    if (picturesArray.length < 3 & style === 'visible') { setStyle('cache') }
 
 
     return (
         <div className="carroussel">
-            <div>
+            <div className={style}>
                 <div>
                     <FontAwesomeIcon className="prev" onClick={prev} icon={faAngleDown} />
                     <FontAwesomeIcon className="next" onClick={next} icon={faAngleDown} />
