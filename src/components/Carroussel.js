@@ -25,11 +25,13 @@ function Carroussel({ pictures }) {
     return (
         <div className="carroussel">
             <div>
-                <FontAwesomeIcon className="prev" onClick={prev} icon={faAngleDown} />
-                <FontAwesomeIcon className="next" onClick={next} icon={faAngleDown} />
-            </div>
-            <div className='index'>
-                <span>{index + 1}/{picturesArray.length}</span>
+                <div>
+                    <FontAwesomeIcon className="prev" onClick={prev} icon={faAngleDown} />
+                    <FontAwesomeIcon className="next" onClick={next} icon={faAngleDown} />
+                </div>
+                <div className='index'>
+                    <span>{index + 1}/{picturesArray.length}</span>
+                </div>
             </div>
             <img alt='carroussel' className="carroussel-gallery" src={picturesArray[index]}></img>
         </div>)
