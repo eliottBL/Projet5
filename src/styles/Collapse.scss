@@ -40,13 +40,11 @@
         font-size: 18px;
         padding-left: 15px;
         margin: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
         text-justify: auto;
         background-color: #f6f6f6;
         display: flex;
         max-width: 1220px;
-        width: 100%;
+        width: auto;
 
         .close {
             display: none;

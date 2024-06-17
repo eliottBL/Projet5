@@ -24,10 +24,18 @@ code {
     display: flex;
     flex-direction: column;
     width: 90vw;
+    height: 100%;
     gap: 20px;
+
+    .apropos-collapses {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   .main-erreur {
+    font-family: 'Montserrat';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +43,13 @@ code {
     .erreur-title {
       color: #ff6060;
       margin: 0px;
-      font-size: 288px;
+      font-size: 200px;
+    }
+
+    .erreur-paragraphe {
+      color: #ff6060;
+      font-weight: 500;
+      font-size: 20px;
     }
 
     .retour {
