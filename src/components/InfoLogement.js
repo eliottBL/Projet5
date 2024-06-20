@@ -27,7 +27,7 @@ function InfoLogement({ description, equipements, tags, title, location, hostPic
                             <p className="host-name">{hostNameSplit[0]}</p>
                             <p className="host-name">{hostNameSplit[1]}</p>
                         </div>
-                        <img className="host-pic" src={hostPic}></img>
+                        <img alt="hote de face" className="host-pic" src={hostPic}></img>
                     </div>
                     <Rating rating={rate} />
                 </div>

@@ -12,7 +12,7 @@ function Apropos() {
       <Banner texte={texte} imageUrl={imageUrl} />
       <section className='apropos-collapses'>
         {dataApropos.map((data) => (
-          <Collapse title={data.titre} contenue={data.contenue} />
+          <Collapse key={data.titre} title={data.titre} contenue={data.contenue} />
         ))}
       </section>
     </main>

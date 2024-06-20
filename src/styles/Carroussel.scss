@@ -9,36 +9,43 @@
     }
 
     div {
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        color: white;
-        object-fit: cover;
-        width: 90vw;
-        max-height: 415px;
-        height: 100%;
-        align-items: center;
+        .prevNext {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            object-fit: cover;
+            width: 90vw;
+            max-width: 1240px;
+            max-height: 415px;
+            height: 100%;
+            align-items: center;
 
-        .prev {
-            rotate: 90deg;
-            font-size: 60px;
+            .prev {
+                rotate: 90deg;
+                font-size: 60px;
+            }
+
+            .next {
+                rotate: -90deg;
+                font-size: 60px;
+            }
+
         }
 
-        .next {
-            rotate: -90deg;
-            font-size: 60px;
-        }
+        .index {
+            display: flex;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            width: 90vw;
+            position: absolute;
+            height: 415px;
+            justify-content: center;
+            align-items: end;
 
-    }
-
-    .index {
-        width: 90vw;
-        position: absolute;
-        justify-content: center;
-        align-items: end;
-
-        span {
-            margin-bottom: 10px;
+            span {
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -53,8 +60,10 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .carroussel {
-        .index {
-            display: none;
+        div {
+            .index {
+                display: none;
+            }
         }
     }
 }

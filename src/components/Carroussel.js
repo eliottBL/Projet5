@@ -8,6 +8,7 @@ function Carroussel({ pictures }) {
     const picturesArray = { pictures }.pictures
     const [index, setIndex] = useState(0)
     const prev = () => {
+        console.log("lcic")
         if (index - 1 < 0) {
             setIndex(picturesArray.length - 1)
         }
@@ -27,12 +28,12 @@ function Carroussel({ pictures }) {
     return (
         <div className="carroussel">
             <div className={style}>
-                <div>
-                    <FontAwesomeIcon className="prev" onClick={prev} icon={faAngleDown} />
-                    <FontAwesomeIcon className="next" onClick={next} icon={faAngleDown} />
-                </div>
                 <div className='index'>
                     <span>{index + 1}/{picturesArray.length}</span>
+                </div>
+                <div className='prevNext'>
+                    <FontAwesomeIcon className="prev" onClick={prev} icon={faAngleDown} />
+                    <FontAwesomeIcon className="next" onClick={next} icon={faAngleDown} />
                 </div>
             </div>
             <img alt='carroussel' className="carroussel-gallery" src={picturesArray[index]}></img>
