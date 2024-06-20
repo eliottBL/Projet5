@@ -20,41 +20,46 @@ code {
   gap: 20px;
   height: 100vh;
 
-  .main-apropos {
+  .sub-container {
     display: flex;
     flex-direction: column;
-    width: 90vw;
-    height: 100%;
     gap: 20px;
 
-    .apropos-collapses {
+    .main-apropos {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-    }
-  }
+      width: 90vw;
+      gap: 20px;
 
-  .main-erreur {
-    font-family: 'Montserrat';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .erreur-title {
-      color: #ff6060;
-      margin: 0px;
-      font-size: 200px;
+      .apropos-collapses {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
     }
 
-    .erreur-paragraphe {
-      color: #ff6060;
-      font-weight: 500;
-      font-size: 20px;
-    }
+    .main-erreur {
+      font-family: 'Montserrat';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    .retour {
-      margin-top: 10%;
-      margin-bottom: 10%;
+      .erreur-title {
+        color: #ff6060;
+        margin: 0px;
+        font-size: 200px;
+      }
+
+      .erreur-paragraphe {
+        color: #ff6060;
+        font-weight: 500;
+        font-size: 20px;
+      }
+
+      .retour {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
     }
   }
 }
@@ -62,9 +67,11 @@ code {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .container {
-    .main-erreur {
-      .erreur-title {
-        font-size: 150px;
+    .sub-container {
+      .main-erreur {
+        .erreur-title {
+          font-size: 150px;
+        }
       }
     }
   }

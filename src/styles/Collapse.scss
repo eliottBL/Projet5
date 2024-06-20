@@ -37,24 +37,29 @@
     }
 
 
+
     #collapse-txt {
         font-size: 18px;
         padding-left: 15px;
         padding-right: 15px;
         margin: none;
         text-justify: auto;
-        background-color: aqua;
-
+        background-color: #f6f6f6;
+        overflow: hidden;
     }
 
     .txt-open {
-        max-height: 500px;
-        transition: max-height 500ms ease-in;
+        max-height: 1000px;
+        transition: max-height ease-in 0.8s;
+
+        p {
+            display: block;
+        }
+
     }
 
     .txt-close {
         max-height: 0;
-        overflow: hidden;
-        transition: max-height 400ms ease-out;
+        transition: max-height ease-out 0.4s;
     }
 }
