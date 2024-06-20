@@ -8,7 +8,6 @@ function Carroussel({ pictures }) {
     const picturesArray = { pictures }.pictures
     const [index, setIndex] = useState(0)
     const prev = () => {
-        console.log("lcic")
         if (index - 1 < 0) {
             setIndex(picturesArray.length - 1)
         }

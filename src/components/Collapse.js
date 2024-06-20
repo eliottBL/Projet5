@@ -20,12 +20,8 @@ function Collapse({ title, contenue }) {
                 <h4>{title}</h4>
                 <img alt='' className={style} onClick={OpenClose} src={svg}></img>
             </div>
-            <div className='collapse-texte'>
-                <div className={style}>
-                    {contenueArray.map((element, index) => (
-                        <p key={index}>{element}</p>
-                    ))}
-                </div>
+            <div className={`txt-${style}`} id='collapse-txt'>
+                {contenue}
             </div>
         </div>
     )
